@@ -45,19 +45,19 @@ public class StatsService {
 
     public int numberMonthsSalesBelowAverage(int[] realizations) {
         float average = averageSum(realizations);
-        int quantityMonth = 0;
+        int numberMonth = 0;
         for (int realization : realizations) {
-            if (realization < average) {quantityMonth++;}
+            if (realization < average) {numberMonth++;}
         }
-        return quantityMonth;
+        return numberMonth;
     }
 
     public int numberMonthsAboveAverageSales(int[] realizations) {
         float average = averageSum(realizations);
-        int quantityMonth = 0;
+        int numberMonth = 0;
         for (int realization : realizations) {
-            if (realization > average) {quantityMonth++;}
+            if (realization > average) {numberMonth++;}
         }
-        return quantityMonth;
+        return numberMonth;
     }
 }
